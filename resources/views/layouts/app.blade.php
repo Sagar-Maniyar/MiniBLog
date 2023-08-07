@@ -31,23 +31,47 @@
         .al-center{
             align-items: center !important;
         }
-        .navbar-nav{
-            padding-left:70%;
-        }
+        
         .scroller{
             max-height: 340px;
             overflow-y: scroll;
         }
+        .opa-zero{
+            opacity: 0 !important;
+        }
+
+        .navbar-custom{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            padding: 7px 6%;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-custom">
         <ul class="navbar-nav ">
         <li><a class="nav-link text-light" href="{{ route('product.home') }}">Home</a></li>
             <li class="nav-item">
                 <a class="nav-link text-light" href="/crud">Product</a>
-                
             </li>
+            <li class="nav-item login opa-zero">
+                <a class="nav-link text-light" href=""></a>
+            </li>
+            <li class="nav-item login opa-zero">
+                <a class="nav-link text-light" href=""></a>
+            </li>
+            <li class="nav-item login opa-zero">
+                <a class="nav-link text-light" href=""></a>
+            </li><li class="nav-item login opa-zero">
+                <a class="nav-link text-light" href=""></a>
+            </li><li class="nav-item login opa-zero">
+                <a class="nav-link text-light" href=""></a>
+            </li>
+            <li class="nav-item login">
+                <a class="nav-link text-light" href="admin">Login</a>
+            </li>
+
             
         </ul>
     </nav>

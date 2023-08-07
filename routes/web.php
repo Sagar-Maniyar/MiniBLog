@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProuctController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+
 use App\Models\Product;
 
 /*
@@ -24,4 +26,5 @@ Route::put('products/{id}/update',[ProuctController::class, 'update'])->name('pr
 Route::get('products/{id}/delete',[ProuctController::class, 'delete'])->name('product.delete');  
 Route::get('products/{id}/show',[ProuctController::class, 'show'])->name('product.show');
 Route::get('home', [HomeController::class, 'home'])->name('product.home');
-
+Route::view('admin','login')->name('product.admin');
+Route::post('admin',[AdminController::class],'adminLogin');
